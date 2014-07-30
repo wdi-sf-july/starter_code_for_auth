@@ -7,10 +7,11 @@ Assuming we've gone through something like  the `helpful_notes.md` we can focus 
 
 * npm install
   * do a quick `sqlize -V` check
+* `createdb auth_blg_development`
+* `sqlize db:migrate`
 * take a look at the `user` and `post` models
   * add `classMethods` for the `user`
     * `encryptPass`
     * `comparePass`
     * `createNewUser`
     * `authorize`
-    
