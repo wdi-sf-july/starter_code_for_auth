@@ -11,9 +11,9 @@ module.exports = {
       updatedAt: DataTypes.DATE,
       username: {
         type: DataTypes.STRING,
-          unique: true, 
-          allowNull: false,
-        },
+        unique: true, 
+        allowNull: false
+      },
       password: {
         type: DataTypes.STRING,
         allowNull: false

@@ -1,0 +1,20 @@
+<% include ../partials/header.ejs %>  
+  <div>
+  <%= typeof message !== undefined ? message : "" %>
+  </div>
+  <div>
+
+    <% posts.forEach(function(post){ %>
+      <header>
+        <%= post.dataValues.title %>
+      </header>
+      <article>
+          <section>
+            <p>
+              <%= post.dataValues.body %>
+            </p>
+          </section>
+      </article>
+    <% }) %>
+  </div>
+<% include ../partials/footer.ejs %>
